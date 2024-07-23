@@ -20,14 +20,15 @@
 	<p class="m-5 mt-4 text-lg text-white">Book cipher</p>
 
 	<div class="flex w-full flex-grow gap-3">
-		<Textarea id="book" placeholder="Book text..." bind:value={bookText} />
-		<Textarea id="cipher" placeholder="Cipher text..." bind:value={cipherText} />
+		<Textarea id="book" placeholder="Book text..." bind:value={bookText} spellcheck="false" />
+		<Textarea id="cipher" placeholder="Cipher text..." bind:value={cipherText} spellcheck="false" />
 	</div>
 
 	<Button class="px-10" on:click={decode}>Decode</Button>
 
 	<div class="flex w-full justify-center">
-		<Textarea id="output" rows="12" placeholder="Output" bind:value={output}></Textarea>
+		<Textarea id="output" rows="12" placeholder="Output" bind:value={output} spellcheck="false"
+		></Textarea>
 	</div>
 </div>
 
